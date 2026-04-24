@@ -1,0 +1,48 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package model;
+
+/**
+ *
+ * @author Lean
+ */
+public class Triangulo {
+    private float base;
+    private float altura;
+    private float area;
+
+    public Triangulo() {
+    }
+
+    public float getBase() {
+        return base;
+    }
+
+    public void setBase(float base) {
+        this.base = base;
+    }
+
+    public float getAltura() {
+        return altura;
+    }
+
+    public void setAltura(float altura) {
+        this.altura = altura;
+    }
+
+    public float getArea() {
+        return area;
+    }
+
+    public void setArea(float area) {
+        this.area = area;
+    }
+    
+    public float calcularArea(){
+        setArea((getBase()*getAltura())/2);
+        return getArea();
+    }
+    
+}
