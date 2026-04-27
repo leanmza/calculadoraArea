@@ -34,6 +34,7 @@ public class InicioIgu extends javax.swing.JFrame {
         btnRectangulo = new javax.swing.JButton();
         btnSalir = new javax.swing.JButton();
         btnTriangulo = new javax.swing.JButton();
+        btnTriangulo1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -52,6 +53,9 @@ public class InicioIgu extends javax.swing.JFrame {
         btnTriangulo.setText("Triángulo");
         btnTriangulo.addActionListener(this::btnTrianguloActionPerformed);
 
+        btnTriangulo1.setText("Circulo");
+        btnTriangulo1.addActionListener(this::btnTriangulo1ActionPerformed);
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -67,7 +71,8 @@ public class InicioIgu extends javax.swing.JFrame {
                             .addComponent(btnRectangulo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(btnCuadrado, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(btnSalir, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(btnTriangulo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                            .addComponent(btnTriangulo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btnTriangulo1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                 .addContainerGap(86, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -81,9 +86,11 @@ public class InicioIgu extends javax.swing.JFrame {
                 .addComponent(btnRectangulo)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(btnTriangulo)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 112, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(btnTriangulo1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 123, Short.MAX_VALUE)
                 .addComponent(btnSalir)
-                .addGap(94, 94, 94))
+                .addGap(48, 48, 48))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -126,6 +133,13 @@ public class InicioIgu extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_btnTrianguloActionPerformed
 
+    private void btnTriangulo1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTriangulo1ActionPerformed
+        CirculoIgu circuloIgu = new CirculoIgu();
+        circuloIgu.setVisible(true);
+        circuloIgu.setLocationRelativeTo(null);
+        dispose();
+    }//GEN-LAST:event_btnTriangulo1ActionPerformed
+
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -133,6 +147,7 @@ public class InicioIgu extends javax.swing.JFrame {
     private javax.swing.JButton btnRectangulo;
     private javax.swing.JButton btnSalir;
     private javax.swing.JButton btnTriangulo;
+    private javax.swing.JButton btnTriangulo1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
